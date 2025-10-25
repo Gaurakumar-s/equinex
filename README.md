@@ -32,9 +32,10 @@ Equinex simplifies expense tracking by providing a centralized platform to:
 
 <br/>
 
+
 ⭐ Highlights
 
-🎯 Indian Market Focus - Built specifically for Indian users with ₹ currency support
+🎯 Indian Market Focus - Built specifically for Indian users with ₹ currency support  
 ⚡ Real-Time Sync - Instant updates across all devices without manual refresh
 🧮 Smart Settlement Algorithm - Optimizes transactions to minimize payment steps
 📧 Automated Email System - Daily payment reminders (10 AM IST) & monthly AI-powered spending insights
