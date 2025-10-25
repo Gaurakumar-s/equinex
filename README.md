@@ -32,8 +32,7 @@ Equinex simplifies expense tracking by providing a centralized platform to:
 
 <br/>
 
-<br/>
-## ⭐ Project Highlights
+# ⭐ Project Highlights
 
 - 🎯 **Indian Market Focus** — Built specifically for Indian users with full ₹ currency support
 - ⚡ **Real-Time Sync** — Instant updates across all devices without manual refresh
