@@ -48,7 +48,7 @@ export const useConvexMutation = (mutation) => {
       return response;
     } catch (err) {
       setError(err);
-      toast.error(err.message);
+      // Don't show toast here - let the component handle error messages
       throw err;
     } finally {
       setIsLoading(false);
