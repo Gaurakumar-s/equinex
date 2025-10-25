@@ -1,6 +1,7 @@
 import { mutation, query } from "./_generated/server";
 import { v } from "convex/values";
 import { internal } from "./_generated/api";
+import { ConvexError } from "convex/values";
 
 /* ============================================================================
  *  MUTATION: createSettlement
@@ -129,16 +130,26 @@ export const createSettlement = mutation({
     // Prevent creating settlement if there's no balance or if it's in wrong direction
     if (amountOwed <= 0) {
       if (amountOwed === 0) {
-        throw new Error("Nothing to settle! All expenses between you are already balanced.");
+        throw new ConvexError({
+          message: "Nothing to settle! All expenses between you are already balanced.",
+          code: "NOTHING_TO_SETTLE"
+        });
       } else {
         // Balance is reversed - receiver owes payer instead
         const reversedAmount = Math.abs(amountOwed);
-        throw new Error(`BALANCE_REVERSED:${reversedAmount.toFixed(2)}`);
+        throw new ConvexError({
+          message: `BALANCE_REVERSED:${reversedAmount.toFixed(2)}`,
+          code: "BALANCE_REVERSED",
+          amount: reversedAmount
+        });
       }
     }
     
     if (args.amount > amountOwed + 0.01) { // Small tolerance for rounding
-      throw new Error(`Settlement amount ₹${args.amount.toFixed(2)} exceeds the actual balance ₹${amountOwed.toFixed(2)}. Please adjust the amount.`);
+      throw new ConvexError({
+        message: `Settlement amount ₹${args.amount.toFixed(2)} exceeds the actual balance ₹${amountOwed.toFixed(2)}. Please adjust the amount.`,
+        code: "OVERPAYMENT"
+      });
     }
 
     /* ── insert ──────────────────────────────────────────────────────────── */
