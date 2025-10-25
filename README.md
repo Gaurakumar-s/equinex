@@ -1,19 +1,9 @@
 # 💰 Equinex - Smart Expense Sharing Platform
 
-<div align="center">
 
-![Equinex Banner](https://img.shields.io/badge/Equinex-Expense%20Sharing-00A67E?style=for-the-badge&logo=wallet&logoColor=white)
 
 **Split expenses effortlessly. Track spending smartly. Settle up seamlessly.**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-00A67E?style=flat&logo=vercel)](https://equinex-two.vercel.app)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github)](https://github.com/yourusername/equinex)
-[![Next.js](https://img.shields.io/badge/Next.js-16.0-black?style=flat&logo=next.js)](https://nextjs.org/)
-[![Convex](https://img.shields.io/badge/Convex-Backend-orange?style=flat)](https://www.convex.dev/)
-
-*A college project demonstrating modern full-stack development with real-time features*
-
-</div>
 
 ---
 
@@ -314,23 +304,42 @@ graph TD
 ## 📸 Screenshots
 
 ### 1. Landing Page
-![Landing Page](https://via.placeholder.com/800x400?text=Landing+Page)
+<img width="1354" height="680" alt="Screenshot 2025-10-25 201454" src="https://github.com/user-attachments/assets/23ad0b35-8382-4fd7-b6bb-4eedbb4895c6" />
+<img width="1353" height="634" alt="Screenshot 2025-10-25 201528" src="https://github.com/user-attachments/assets/e87fd46b-cf13-4710-a0bf-6ee25de488f2" />
+<img width="1365" height="633" alt="Screenshot 2025-10-25 201703" src="https://github.com/user-attachments/assets/f9604b4b-712d-453c-ab74-abb3e3ba289a" />
+
+
+
+
+
 *Modern, responsive landing page with feature highlights*
 
 ### 2. Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard)
+<img width="1364" height="638" alt="Screenshot 2025-10-25 201744" src="https://github.com/user-attachments/assets/85c57389-042f-493b-a443-db44bba39220" />
+<img width="1359" height="627" alt="Screenshot 2025-10-25 201803" src="https://github.com/user-attachments/assets/f66252fb-8f63-433b-b14a-1c4dfcffb322" />
+![Uploading Screenshot 2025-10-25 201830.png…]()
+
+
+
 *Overview of balances, recent expenses, and spending charts*
 
 ### 3. Add Expense
-![Add Expense](https://via.placeholder.com/800x400?text=Add+Expense)
+<img width="1361" height="628" alt="image" src="https://github.com/user-attachments/assets/31f35df5-345c-439a-95a4-8b82fb04aaf6" />
+<img width="1360" height="630" alt="image" src="https://github.com/user-attachments/assets/0c25344f-ead5-44ca-8a90-c0bacb768f6f" />
+
+
 *Intuitive expense creation with multiple split types*
 
 ### 4. Group Management
-![Group Management](https://via.placeholder.com/800x400?text=Group+Management)
+<img width="1365" height="621" alt="Screenshot 2025-10-25 201847" src="https://github.com/user-attachments/assets/41ffb2a3-e755-4895-8170-764e521ecc52" />
+<img width="1359" height="634" alt="Screenshot 2025-10-25 201830" src="https://github.com/user-attachments/assets/d72bd991-532e-40cc-9b4d-0efed2e4d1ad" />
+
+
 *Create groups, add members, and view activity logs*
 
 ### 5. Settlement Page
-![Settlement Page](https://via.placeholder.com/800x400?text=Settlement+Page)
+<img width="1360" height="631" alt="Screenshot 2025-10-25 201920" src="https://github.com/user-attachments/assets/d7ddc3ba-d9ef-4baf-81bb-c07a6d165a71" />
+
 *Smart settlement suggestions with balance validation*
 
 ### 6. Automated Email Notifications
@@ -350,11 +359,15 @@ graph TD
 ### 7. Backend Dashboards
 
 #### Convex Dashboard
-![Convex Dashboard](https://via.placeholder.com/800x400?text=Convex+Dashboard)
+<img width="1366" height="624" alt="Screenshot 2025-10-25 202106" src="https://github.com/user-attachments/assets/18c5b3f6-2ccb-4564-ac3f-e432c4d27d91" />
+<img width="1363" height="640" alt="Screenshot 2025-10-25 202215" src="https://github.com/user-attachments/assets/ba0774fe-b044-413a-a988-34d29c291e55" />
+<img width="1361" height="572" alt="Screenshot 2025-10-25 202236" src="https://github.com/user-attachments/assets/00e6d06b-6901-4f6e-9bf7-ebec011369e2" />
+
 *Real-time database and backend functions management*
 
 #### Inngest Dashboard
-![Inngest Dashboard](https://via.placeholder.com/800x400?text=Inngest+Dashboard)
+<img width="1361" height="635" alt="image" src="https://github.com/user-attachments/assets/7d1c6f73-74bd-4c87-9814-2093ff02b391" />
+
 *Scheduled background jobs (payment reminders & insights)*
 
 ---
@@ -492,122 +505,11 @@ graph TD
 
 ### Visual Schema Overview
 
-![Database Schema](https://via.placeholder.com/1000x600?text=Database+Schema+Diagram)
+<img width="989" height="631" alt="Screenshot 2025-10-25 194724" src="https://github.com/user-attachments/assets/4ee2f7ac-29be-488c-b321-d822352384c4" />
+
 *Entity Relationship Diagram showing all tables and their relationships*
 
-### Core Tables
 
-#### **Users Table**
-Stores user authentication and profile information.
-
-```javascript
-{
-  _id: Id<"users">,
-  name: string,
-  email: string,
-  tokenIdentifier: string,  // Clerk user ID
-  imageUrl?: string,
-  hasSeenWelcome?: boolean
-}
-
-// Indexes:
-// - by_token (tokenIdentifier)
-// - by_email (email)
-// - search_name (name) - for user search
-// - search_email (email) - for user search
-```
-
-#### **Expenses Table**
-Tracks all expenses (individual and group).
-
-```javascript
-{
-  _id: Id<"expenses">,
-  description: string,
-  amount: number,              // in rupees
-  category?: string,           // foodDrink, transport, etc.
-  date: number,                // timestamp
-  paidByUserId: Id<"users">,
-  splitType: "equal" | "percentage" | "exact",
-  splits: [{
-    userId: Id<"users">,
-    amount: number,
-    paid: boolean              // true if user was the payer
-  }],
-  groupId?: Id<"groups">,      // null for 1-to-1 expenses
-  createdBy: Id<"users">
-}
-
-// Indexes:
-// - by_group (groupId)
-// - by_payer (paidByUserId) - CRITICAL for dashboard performance
-// - by_date (date)
-```
-
-#### **Settlements Table**
-Records payments between users.
-
-```javascript
-{
-  _id: Id<"settlements">,
-  amount: number,
-  note?: string,
-  date: number,                // timestamp
-  paidByUserId: Id<"users">,
-  receivedByUserId: Id<"users">,
-  groupId?: Id<"groups">,      // null for 1-to-1 settlements
-  relatedExpenseIds?: Id<"expenses">[],
-  createdBy: Id<"users">
-}
-
-// Indexes:
-// - by_group (groupId)
-// - by_payer (paidByUserId) - CRITICAL for dashboard performance
-// - by_receiver (receivedByUserId) - CRITICAL for dashboard performance
-// - by_date (date)
-```
-
-#### **Groups Table**
-Manages group information and members.
-
-```javascript
-{
-  _id: Id<"groups">,
-  name: string,
-  description?: string,
-  createdBy: Id<"users">,
-  members: [{
-    userId: Id<"users">,
-    role: "admin" | "member",
-    joinedAt: number,
-    addedBy?: Id<"users">      // tracks who added this member
-  }]
-}
-```
-
-#### **Activity Log Table**
-Tracks all group activities for audit trail.
-
-```javascript
-{
-  _id: Id<"activityLog">,
-  groupId: Id<"groups">,
-  type: "member_added" | "member_removed" | "admin_transferred" | 
-        "group_created" | "members_added_bulk",
-  performedBy: Id<"users">,
-  targetUserId?: Id<"users">,      // for single actions
-  targetUserIds?: Id<"users">[],   // for bulk actions
-  timestamp: number,
-  metadata?: {
-    memberCount?: number,
-    addedCount?: number
-  }
-}
-
-// Indexes:
-// - by_group (groupId)
-// - by_timestamp (timestamp)
-```
 
 ### Relationships
 
@@ -696,36 +598,8 @@ This project demonstrates:
 - ✅ Error handling and user feedback
 - ✅ Deployment and production setup
 
----
 
-## 🤝 Contributing
 
-This is a college project, but contributions are welcome!
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👨‍💻 Author
-
-**[Your Name]**
-- College: [Your College Name]
-- Course: [Your Course/Branch]
-- Year: [Your Year]
-- Email: [your-email@example.com]
-- GitHub: [@yourusername](https://github.com/yourusername)
-
----
 
 ## 🙏 Acknowledgments
 
@@ -736,12 +610,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 - **Radix UI** - Accessible component library
 - **Tailwind CSS** - Utility-first CSS framework
 
----
 
-<div align="center">
 
-**Made with ❤️ for Academic Excellence**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/yourusername/equinex)
 
 </div>
