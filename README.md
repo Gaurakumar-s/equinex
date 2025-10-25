@@ -10,6 +10,7 @@ Equinex is a full-stack expense-sharing application built for the Indian market.
 
 <br/>
 
+
 ## 🎯 Problem Statement
 
 Managing shared expenses manually often leads to:
@@ -31,10 +32,21 @@ Equinex simplifies expense tracking by providing a centralized platform to:
 
 <br/>
 
+⭐ Highlights
+
+🎯 Indian Market Focus - Built specifically for Indian users with ₹ currency support
+⚡ Real-Time Sync - Instant updates across all devices without manual refresh
+🧮 Smart Settlement Algorithm - Optimizes transactions to minimize payment steps
+📧 Automated Email System - Daily payment reminders (10 AM IST) & monthly AI-powered spending insights
+🤖 AI-Powered Suggestions - Auto-categorizes expenses and provides personalized savings tips
+👥 Advanced Group Management - Role-based access, activity logs, and bulk member operations
+📊 Comprehensive Analytics - Monthly trends, category breakdowns, and visual spending charts
+🔐 Enterprise-Grade Security - Clerk authentication with secure data handling
+🎨 Modern UI/UX - Built with Next.js 16, React 19, Tailwind CSS 4, and shadcn/ui
+📱 Fully Responsive - Seamless experience across desktop, tablet, and mobile devices
+
 ## 🚀 Key Features
 
-<details>
-<summary><b>📋 Click to view all features</b></summary>
 
 <br/>
 
@@ -82,7 +94,6 @@ Equinex simplifies expense tracking by providing a centralized platform to:
 - **Group Invitations:**
   - Sent automatically when new members are added to a group
 
-</details>
 
 <br/>
 
@@ -250,8 +261,7 @@ graph TD
 
 ## 📸 Screenshots
 
-<details>
-<summary><b>🖼️ View application screenshots</b></summary>
+
 
 <br/>
 
@@ -296,7 +306,6 @@ graph TD
 #### Inngest Dashboard
 <img width="1361" alt="Inngest Dashboard" src="https://github.com/user-attachments/assets/7d1c6f73-74bd-4c87-9814-2093ff02b391" />
 
-</details>
 
 <br/>
 
