@@ -13,93 +13,88 @@ Equinex is a full-stack expense-sharing application built for the Indian market.
 
 
 
-🎯 Problem Statement
+# 💰 Equinex - Smart Expense Sharing Platform
+
+
+
+<br/>
+
+## 🎯 Problem Statement
 
 Managing shared expenses manually often leads to:
 
-💭 Confusion about who paid for what
+- Confusion about who paid for what
+- Difficulty tracking debts and group expenses  
+- Forgotten payments and awkward reminders
 
-📉 Difficulty tracking debts and group expenses
+<br/>
 
-⏰ Forgotten payments and awkward reminders
-
-💡 Solution
+## 💡 Solution
 
 Equinex simplifies expense tracking by providing a centralized platform to:
 
-🧾 Track and split expenses effortlessly
+- Track and split expenses effortlessly
+- Automatically calculate balances
+- Send timely payment reminders
+- Offer deep spending insights and analytics
 
-⚖️ Automatically calculate balances
+<br/>
 
-🔔 Send timely payment reminders
+## 🚀 Key Features
 
-📊 Offer deep spending insights and analytics
+### Expense Management
 
-🚀 Key Features
-💳 Expense Management
+- **Add Expenses:** Add expenses with description, amount & category
+- **Split Options:** Equal, Percentage, or Exact Amount splits
+- **Smart Categorization:** 20+ categories (Food, Transport, etc.) with AI-based auto-suggestions
+- **Group & Individual Tracking:** Manage both personal and shared expenses
+- **Real-Time Sync:** Instant updates across all devices
 
-➕ Add Expenses: Add expenses with description, amount & category
+### Group Management
 
-⚙️ Split Options: Equal, Percentage, or Exact Amount splits
+- **Create Groups:** For trips, roommates, events, or projects
+- **Smart Member Management:**
+  - Admin controls (add/remove members, transfer ownership)
+  - Bulk member addition
+  - Automatic email invitations
+- **Activity Logs:** Track member updates, role transfers, and group changes
+- **Role-Based Access:** Different permissions for admins and members
 
-🧠 Smart Categorization: 20+ categories (Food, Transport, etc.) with AI-based auto-suggestions
+### Smart Settlements
 
-👥 Group & Individual Tracking: Manage both personal and shared expenses
+- **Settle Up:** Record payments between individuals or within groups
+- **Optimized Suggestions:** Algorithm minimizes total transactions
+- **Validation Checks:** Prevents overpayments & incorrect directions
+- **Complete History:** Full audit trail of settlements with notes
+- **Multi-Currency:** Supports Indian Rupees (₹)
 
-🔄 Real-Time Sync: Instant updates across all devices
+### Analytics & Insights
 
-👥 Group Management
+- **Dashboard Overview:** Get a summary of balances & spending
+- **Balance Tracking:** View who owes you and who you owe
+- **Trends & Breakdown:** Monthly patterns and category-wise analysis
+- **Spending Insights:** Identify top spending categories and habits
 
-🏗️ Create Groups: For trips, roommates, events, or projects
+### Automated Email Notifications
 
-👨‍💼 Smart Member Management:
+- **Daily Payment Reminders (10:00 AM IST):**
+  - Receive reminders for pending debts with direct settle-up links
+  
+- **Monthly Insights (1st of each month):**
+  - Get total spending reports, top categories, and AI-powered saving tips
+  
+- **Group Invitations:**
+  - Sent automatically when new members are added to a group
 
-Admin controls (add/remove members, transfer ownership)
+<br/>
 
-Bulk member addition
-
-Automatic email invitations
-
-🕒 Activity Logs: Track member updates, role transfers, and group changes
-
-🔐 Role-Based Access: Different permissions for admins and members
-
-💰 Smart Settlements
-
-💸 Settle Up: Record payments between individuals or within groups
-
-🧮 Optimized Suggestions: Algorithm minimizes total transactions
-
-✅ Validation Checks: Prevents overpayments & incorrect directions
-
-📜 Complete History: Full audit trail of settlements with notes
-
-💱 Multi-Currency: Supports Indian Rupees (₹)
-
-📊 Analytics & Insights
-
-🧾 Dashboard Overview: Get a summary of balances & spending
-
-⚖️ Balance Tracking: View who owes you and who you owe
-
-📈 Trends & Breakdown: Monthly patterns and category-wise analysis
-
-💡 Spending Insights: Identify top spending categories and habits
-
-🔔 Automated Email Notifications
-
-⏰ Daily Payment Reminders (10:00 AM IST):
-Receive reminders for pending debts with direct settle-up links
-
-📅 Monthly Insights (1st of each month):
-Get total spending reports, top categories, and AI-powered saving tips
-
-✉️ Group Invitations:
-Sent automatically when new members are added to a group
-
-🧭 Purpose
+## 🎯 Purpose
 
 To simplify shared expense management, promote transparency, and help users make smarter financial decisions.
+
+---
+
+
 
 ## 🛠 Tech Stack
 
