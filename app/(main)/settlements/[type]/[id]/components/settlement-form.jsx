@@ -76,8 +76,12 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
       toast.success("Settlement recorded successfully!");
       if (onSuccess) onSuccess();
     } catch (error) {
+      // Debug: Log the error to console
+      console.log("Settlement error:", error);
+      console.log("Error message:", error.message);
+      
       // Parse balance reversed error with amount
-      if (error.message.startsWith("BALANCE_REVERSED:")) {
+      if (error.message && error.message.includes("BALANCE_REVERSED:")) {
         const reversedAmount = error.message.split(":")[1];
         toast.error(
           <div className="space-y-2">
@@ -87,7 +91,7 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
           </div>,
           { duration: 7000 }
         );
-      } else if (error.message.includes("Nothing to settle") || error.message.includes("already balanced")) {
+      } else if (error.message && (error.message.includes("Nothing to settle") || error.message.includes("already balanced"))) {
         toast.info("✅ You're already settled up with " + entityData.counterpart.name + "!");
       } else {
         toast.error("Failed to record settlement: " + error.message);
@@ -134,8 +138,12 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
       toast.success("Settlement recorded successfully!");
       if (onSuccess) onSuccess();
     } catch (error) {
+      // Debug: Log the error to console
+      console.log("Settlement error:", error);
+      console.log("Error message:", error.message);
+      
       // Parse balance reversed error with amount
-      if (error.message.startsWith("BALANCE_REVERSED:")) {
+      if (error.message && error.message.includes("BALANCE_REVERSED:")) {
         const reversedAmount = error.message.split(":")[1];
         toast.error(
           <div className="space-y-2">
@@ -145,7 +153,7 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
           </div>,
           { duration: 7000 }
         );
-      } else if (error.message.includes("Nothing to settle") || error.message.includes("already balanced")) {
+      } else if (error.message && (error.message.includes("Nothing to settle") || error.message.includes("already balanced"))) {
         toast.info("✅ You're already settled up with " + selectedUser.name + "!");
       } else {
         toast.error("Failed to record settlement: " + error.message);
