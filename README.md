@@ -13,100 +13,81 @@ Equinex is live at  [https://equinex-two.vercel.app](https://equinex-two.vercel.
 
 Equinex is a full-stack expense-sharing application built for the Indian market. It simplifies splitting bills with friends, roommates, or groups while providing real-time updates and smart settlement suggestions.
 
-### 🎯 Problem Statement
-Managing shared expenses often leads to:
-- Confusion about who paid for what
-- Difficulty tracking multiple debts
-- Complex calculations for group bills
-- Forgotten payments and awkward reminders
+### 🎯 ## 🎯 Problem Statement
+Managing shared expenses manually often leads to:
+- Confusion about who paid for what  
+- Difficulty tracking debts and group expenses  
+- Forgotten payments and awkward reminders  
 
-### ✨ Solution
-Equinex provides a centralized platform to:
-- Track all shared expenses in one place
-- Automatically calculate who owes whom
-- Send automated payment reminders
-- Provide spending insights and analytics
+## 💡 Solution
+**Equinex** provides a centralized platform to:
+- Track and split expenses easily  
+- Automatically calculate balances  
+- Send payment reminders  
+- Offer spending insights through analytics  
+
 
 ---
 
 ## 🚀 Key Features
 
-### 💳 Expense Management
-- **Add Expenses**: Create expenses with description, amount, and category
-- **Multiple Split Types**: 
-  - **Equal Split**: Divide amount equally among all participants
-  - **Percentage Split**: Assign custom percentages to each person
-  - **Exact Amount Split**: Specify exact amounts for each participant
-- **Smart Categorization**: 20+ expense categories (Food, Transport, Entertainment, etc.)
-- **Auto-suggestions**: AI suggests categories based on expense description
-- **Group & Individual**: Track both 1-to-1 and group expenses seamlessly
-- **Real-time Updates**: See changes instantly across all devices
+### 💳Expense Management
 
-### 👥 Advanced Group Features
-- **Create Groups**: Set up groups for roommates, trips, events, or projects
-- **Smart Member Management**:
-  - **Admin Controls**: Add or remove members from groups
-  - **Bulk Member Addition**: Add multiple members at once
-  - **Email Notifications**: New members receive automatic email invitations
-  - **Transfer Admin Rights**: Admins can transfer ownership to other members
-  - **Leave Group**: Members can leave groups anytime
-  - **Admin Exit**: Admins must transfer admin rights before leaving
-- **Activity Logs**: Complete audit trail of all group activities
-  - Member additions/removals
-  - Admin role transfers
-  - Group creation events
-- **Role-based Access**: Different permissions for admins and members
+Add Expenses: Add expenses with description, amount & category
 
-### 💰 Smart Settlement System
-- **Settle Up**: Record payments between individuals or within groups
-- **Optimized Suggestions**: Algorithm minimizes number of transactions
-- **Balance Validation**: System prevents overpayments and incorrect amounts
-- **Direction Validation**: Ensures payments flow in correct direction
-- **Complete History**: Audit trail of all settlements with notes
-- **Multi-currency**: Full support for Indian Rupees (₹)
+Split Options: Equal, Percentage, or Exact Amount splits
 
-### 📊 Analytics & Insights
-- **Dashboard Overview**: Visual summary of your financial status
-- **Balance Tracking**: 
-  - Total Balance (What you're owed - What you owe)
-  - Detailed breakdown of who owes you
-  - Detailed breakdown of who you owe
-- **Monthly Trends**: Track spending patterns over time with charts
-- **Category Breakdown**: See where your money goes
-- **Spending Charts**: Visual representation of monthly/yearly expenses
+Smart Categorization: 20+ categories (Food, Transport, etc.) with AI-based auto-suggestions
 
-### 🔔 Automated Email Notifications
+Group & Individual Tracking: Manage both personal and shared expenses
 
-#### Daily Payment Reminders (10:00 AM IST)
-- **Who Gets It**: Users with outstanding debts
-- **What It Contains**:
-  - List of all people you owe money to
-  - Amount owed to each person
-  - How long the debt has been pending
-  - Direct link to settle up
-- **Purpose**: Friendly reminder to clear pending payments
+Real-Time Sync: Instant updates across all devices
 
-#### Monthly Spending Insights (1st of Month, 10:00 AM IST)
-- **Who Gets It**: Users with expenses in the past month
-- **What It Contains**:
-  - **Total Spending**: Complete monthly expenditure
-  - **Top Categories**: Your highest spending categories
-  - **AI-Powered Insights**: 4 personalized tips including:
-    - Overview of your spending patterns
-    - Key observations about spending behavior
-    - Specific money-saving suggestions
-    - Encouraging financial habit reminders
-  - **Savings Tips**: Category-specific advice to reduce expenses
-- **Purpose**: Help users understand and optimize their spending habits
+👥 Group Management
 
-#### Group Invitation Emails
-- **When Sent**: Immediately when a member is added to a group
-- **What It Contains**:
-  - Group name and inviter details
-  - What you can do in the group
-  - Direct link to view the group
-- **Purpose**: Notify users about group membership
+Create Groups: For trips, roommates, events, or projects
 
+Smart Member Management:
+
+Admin controls (add/remove members, transfer ownership)
+
+Bulk member addition
+
+Auto email invitations
+
+Activity Logs: Track all group changes — member updates, role transfers, etc.
+
+Role-based Access: Different permissions for admins & members
+
+💰 Smart Settlements
+
+Settle Up: Record payments within groups or individuals
+
+Optimized Suggestions: Algorithm minimizes total transactions
+
+Validation Checks: Prevents overpayments & incorrect directions
+
+Complete History: Full audit trail of settlements with notes
+
+Multi-Currency: Supports Indian Rupees (₹)
+
+📊 Analytics & Insights
+
+Dashboard Overview: Summary of balances & spending
+
+Balance Tracking: See who owes you & who you owe
+
+Monthly Trends & Category Breakdown: Visual charts & reports
+
+Spending Insights: Identify top categories & spending behavior
+
+🔔 Automated Email Notifications
+
+Daily Reminders (10:00 AM IST): Pending debts & settle-up links
+
+Monthly Insights (1st of month): Total spending, top categories, & AI tips
+
+Group Invitations: Sent automatically when added to a group
 ---
 
 ## 🛠 Tech Stack
