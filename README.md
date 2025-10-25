@@ -1,9 +1,10 @@
 # 💰 Equinex - Smart Expense Sharing Platform
 
-Equinex is live at equinex-two.vercel.app
+Equinex is live at  [https://equinex-two.vercel.app](https://equinex-two.vercel.app)
 
 
-**Live Demo**: [https://equinex-two.vercel.app](https://equinex-two.vercel.app)
+
+
 
 
 ---
