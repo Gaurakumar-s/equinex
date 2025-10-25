@@ -3,7 +3,7 @@
 Equinex is live at equinex-two.vercel.app
 
 
-**Split expenses effortlessly. Track spending smartly. Settle up seamlessly.**
+**Live Demo**: [https://equinex-two.vercel.app](https://equinex-two.vercel.app)
 
 
 ---
@@ -346,15 +346,18 @@ graph TD
 ### 6. Automated Email Notifications
 
 #### Daily Payment Reminder Email (10:00 AM IST)
-![Payment Reminder Email](https://via.placeholder.com/800x600?text=Payment+Reminder+Email)
+<img width="458" height="537" alt="image" src="https://github.com/user-attachments/assets/47138835-9e47-45ff-8739-f784c3d6906e" />
+
 *Automated email showing outstanding debts with settle-up links*
 
 #### Monthly Spending Insights Email (1st of Month, 10:00 AM IST)
-![Monthly Insights Email](https://via.placeholder.com/800x600?text=Monthly+Insights+Email)
+<img width="1363" height="675" alt="Screenshot 2025-10-25 215041" src="https://github.com/user-attachments/assets/9188d651-b8e7-4904-a34a-437b71be9204" />
+
 *AI-powered spending analysis with personalized savings tips*
 
 #### Group Invitation Email
-![Group Invitation Email](https://via.placeholder.com/800x600?text=Group+Invitation+Email)
+<img width="1365" height="623" alt="image" src="https://github.com/user-attachments/assets/fcd6f107-937b-4ff8-97df-037db41d8da6" />
+
 *Notification when added to a group with direct access link*
 
 ### 7. Backend Dashboards
@@ -469,7 +472,7 @@ graph TD
    - Add your Vercel domain to Clerk's **Allowed Origins**
    - Set up Inngest (optional): Use Vercel Integration or manual sync
 
-**Live Demo**: [https://equinex-two.vercel.app](https://equinex-two.vercel.app)
+
 
 ---
 
