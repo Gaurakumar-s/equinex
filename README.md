@@ -1,5 +1,6 @@
 # 💰 Equinex - Smart Expense Sharing Platform
 
+Equinex is live at equinex-two.vercel.app
 
 
 **Split expenses effortlessly. Track spending smartly. Settle up seamlessly.**
