@@ -50,10 +50,8 @@ export default function RootLayout({ children }) {
               identityPreviewEditButton: 'text-primary hover:text-primary/80',
             },
           }}
-          signUpForceRedirectUrl="/dashboard"
-          signInForceRedirectUrl="/dashboard"
-          afterSignInUrl="/dashboard"
-          afterSignUpUrl="/dashboard"
+          signUpFallbackRedirectUrl="/dashboard"
+          signInFallbackRedirectUrl="/dashboard"
         >
           <ConvexClientProvider>
             <Header />
