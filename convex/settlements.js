@@ -131,7 +131,9 @@ export const createSettlement = mutation({
       if (amountOwed === 0) {
         throw new Error("Nothing to settle! All expenses between you are already balanced.");
       } else {
-        throw new Error("Cannot settle in this direction. The balance is reversed - the other person owes you instead.");
+        // Balance is reversed - receiver owes payer instead
+        const reversedAmount = Math.abs(amountOwed);
+        throw new Error(`BALANCE_REVERSED:${reversedAmount.toFixed(2)}`);
       }
     }
     

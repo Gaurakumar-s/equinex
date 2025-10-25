@@ -76,14 +76,16 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
       toast.success("Settlement recorded successfully!");
       if (onSuccess) onSuccess();
     } catch (error) {
-      // Show friendly message for balance direction errors
-      if (error.message.includes("balance is reversed") || error.message.includes("other person owes you")) {
+      // Parse balance reversed error with amount
+      if (error.message.startsWith("BALANCE_REVERSED:")) {
+        const reversedAmount = error.message.split(":")[1];
         toast.error(
           <div className="space-y-2">
-            <p className="font-semibold">💡 Smart Settlement Tip</p>
-            <p className="text-sm">The overall balance is in the opposite direction. Instead of this payment, have {entityData.counterpart.name} pay you the net amount!</p>
+            <p className="font-semibold">❌ Cannot Pay in This Direction</p>
+            <p className="text-sm">Overall (across all groups & expenses), <strong>{entityData.counterpart.name} owes you ₹{reversedAmount}</strong>.</p>
+            <p className="text-sm text-muted-foreground">💡 Instead, have them pay you the net amount!</p>
           </div>,
-          { duration: 6000 }
+          { duration: 7000 }
         );
       } else if (error.message.includes("Nothing to settle") || error.message.includes("already balanced")) {
         toast.info("✅ You're already settled up with " + entityData.counterpart.name + "!");
@@ -132,14 +134,16 @@ export default function SettlementForm({ entityType, entityData, onSuccess }) {
       toast.success("Settlement recorded successfully!");
       if (onSuccess) onSuccess();
     } catch (error) {
-      // Show friendly message for balance direction errors
-      if (error.message.includes("balance is reversed") || error.message.includes("other person owes you")) {
+      // Parse balance reversed error with amount
+      if (error.message.startsWith("BALANCE_REVERSED:")) {
+        const reversedAmount = error.message.split(":")[1];
         toast.error(
           <div className="space-y-2">
-            <p className="font-semibold">💡 Smart Settlement Tip</p>
-            <p className="text-sm">The overall balance across ALL groups is in the opposite direction. Instead of this payment, have {selectedUser.name} pay you the net amount!</p>
+            <p className="font-semibold">❌ Cannot Pay in This Direction</p>
+            <p className="text-sm">Overall (across all groups & expenses), <strong>{selectedUser.name} owes you ₹{reversedAmount}</strong>.</p>
+            <p className="text-sm text-muted-foreground">💡 Instead, have them pay you the net amount!</p>
           </div>,
-          { duration: 6000 }
+          { duration: 7000 }
         );
       } else if (error.message.includes("Nothing to settle") || error.message.includes("already balanced")) {
         toast.info("✅ You're already settled up with " + selectedUser.name + "!");
